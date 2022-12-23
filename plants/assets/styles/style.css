@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+:root {
+    --orange: #E06733;
+    --light-green: #EDF2EC;
+    --green: #499A18;
+    --light-gray: #717171;
+    --gray: #636060; 
+    --black: #000000;
+    --black-nav: #010201;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER STYLES START */
+
+.header-container {
+    background: var(--light-green);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 8.4375rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 0.5rem;
+}
+
+.logo__text {
+    margin-bottom: 0.5rem;
+
+    font-family: 'Inika', serif;
+    color: var(--black);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list__item {
+    padding-left: 2.875rem;
+}
+
+.nav-list__link {
+    font-family: 'Inika', serif;
+    color: var(--black-nav);
+}
+
+.active {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+/* HEADER STYLES END */
+
+
+
+/* WELCOME SECTION STYLES START */
+
+
+
+/* WELCOME SECTION STYLES END */

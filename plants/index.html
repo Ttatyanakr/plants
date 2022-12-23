@@ -5,46 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="h1_hidden">Plants</h1>
-        <div class="header__logo">
-            <img src="" alt="logo-image" class="logo__img">
-            <p class="logo__text">Plants</p>
+    <div class="header-container">
+        <div class="wrapper">
+            <header class="main-header">
+                <h1 class="hidden">Plants</h1>
+                
+                <a href="#" class="header__logo">
+                    <img src="/assets/icons/logo_header.svg" alt="logo-image" class="logo__img">
+                    <p class="logo__text">Plants</p>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#welcome" class="nav-list__link active">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#service" class="nav-list__link">Service</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#prices" class="nav-list__link">Price</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-        <nav class="header__nav">
-            <ul class="nav-list">
-                <li class="nav-list__item">
-                    <a href="#welcome" class="nav-list__link">Home</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#about" class="nav-list__link">About us</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#service" class="nav-list__link">Service</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#prices" class="nav-list__link">Price</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#contacts" class="nav-list__link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div>
 
     <main class="main-content">
-        <section class="welcome">
-            <div class="welcome__content">
-                <h2 class="h2-style">We grow plants and give you oxygen</h2>
-                <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum has been the 
-                    industry's standard dummy text ever since the 1500s.</p>
-                <button class="">Learn more</button>  
+        <div class="welcome-container">
+            <div class="wrapper">
+                <section class="welcome">
+                    <div class="welcome__content">
+                        <h2 class="h2-style">We grow plants and give you oxygen</h2>
+                        <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and 
+                            typesetting industry. Lorem Ipsum has been the 
+                            industry's standard dummy text ever since the 1500s.</p>
+                        <button class="">Learn more</button>  
+                    </div>
+                    <div class="welcome__img"></div>
+                </section>
             </div>
-            <div class="welcome__img"></div>
-        </section>
+        </div>
         <section class="about">
             <div class="about__content">
                 <h2 class="h2-style">We are professional experienced gardeners</h2>
