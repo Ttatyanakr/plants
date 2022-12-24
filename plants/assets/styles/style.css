@@ -101,8 +101,11 @@ li {
 }
 
 .welcome__img {
+    width: 28rem;
+    height: 25.4375rem;
+
     order: -1;
-    margin-left: -0.5rem;
+    background: center url("../../assets/images/welcome_leafs.png");
 }
 
 .welcome__content {
@@ -110,7 +113,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
 
-    max-width: 34.375rem;
+    max-width: 34.365rem;
     height: 21.25rem;
 }
 
