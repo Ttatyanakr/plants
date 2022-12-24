@@ -124,7 +124,7 @@ li {
     color: var(--light-gray);
 }
 
-.green-text {
+.welcome__h2_green {
     color: var(--green);
 }
 
@@ -146,3 +146,53 @@ li {
 }
 
 /* WELCOME SECTION STYLES END */
+
+
+
+/* ABOUT SECTION STYLES START */
+
+.about {
+    min-height: 41.625rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__content {
+    /* display: flex;
+    flex-direction: column; */
+
+    max-width: 37.81rem;
+    /* max-height: 21.875rem; */
+    max-height: 21.18rem;
+}
+
+.about__text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.about__h2 {
+    max-width: 28.75rem;
+    margin-top: 0;
+
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: var(--green);
+}
+
+.about__h2_orange {
+    color: var(--orange);
+}
+
+.about__img {
+    width: 29rem;
+    height: 30rem;
+    background: url("../images/about_plant.jpg");
+
+}
+
+/* ABOUT SECTION STYLES END */
