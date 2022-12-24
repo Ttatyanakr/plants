@@ -12,6 +12,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--gray);
 }
 
 .hidden {
@@ -88,6 +89,57 @@ li {
 
 /* WELCOME SECTION STYLES START */
 
+.welcome-container {
+    background: var(--light-green);
+}
 
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 33.125rem;
+}
+
+.welcome__img {
+    order: -1;
+    margin-left: -0.5rem;
+}
+
+.welcome__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 34.375rem;
+    height: 21.25rem;
+}
+
+.welcome__h2 {
+    margin: 0;
+
+    font-size: 2.8125rem;
+    color: var(--light-gray);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.welcome__text {
+    max-width: 33rem;
+
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+}
+
+.welcome__button {
+    max-width: 9.875rem;
+    height: 2.75rem;
+
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: var(--light-green);
+}
 
 /* WELCOME SECTION STYLES END */
