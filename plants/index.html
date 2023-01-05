@@ -10,7 +10,7 @@
     <link rel="icon" href="/assets/icons/favicon.ico">
 </head>
 <body>
-    <div class="header-container">
+    <div class="section__container_green">
         <div class="wrapper">
             <header class="main-header">
                 <h1 class="hidden">Plants</h1>
@@ -43,11 +43,11 @@
     </div>
 
     <main class="main-content">
-        <div class="welcome-container">
+        <div class="section__container_green">
             <div class="wrapper">
                 <section class="welcome">
                     <div class="welcome__content">
-                        <h2 class="welcome__h2">We grow <span class="welcome__h2_green">plants</span> and give you oxygen</h2>
+                        <h2 class="welcome__h2">We grow <span class="h2_green">plants</span> and give you oxygen</h2>
                         <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and 
                             typesetting industry. Lorem Ipsum has been the 
                             industry's standard dummy text ever since the 1500s.</p>
@@ -70,15 +70,15 @@
                 <div class="about__img"></div>
             </section>
         </div>
-        <div class="services-container">
+        <div class="section__container_green">
             <div class="wrapper">
                 <section class="services">
                     <div class="services__top-container">
                         <h2 class="services__h2">Service and our projects</h2>
                         <div class="services__filter">
-                            <button class="services__filter__button">Gardens</button>
-                            <button class="services__filter__button">Lawn</button>
-                            <button class="services__filter__button">Planting</button>
+                            <button class="services__filter__button orange-button">Gardens</button>
+                            <button class="services__filter__button orange-button">Lawn</button>
+                            <button class="services__filter__button orange-button">Planting</button>
                         </div>
                     </div>
                     <ul class="services__list">
@@ -116,29 +116,37 @@
                 </section>
             </div>
         </div>
-        <section class="prices">
-            <div class="prices__container">
-                <h2 class="h2-like">Prices</h2>
-                <ul class="prices__list">
-                    <li class="prices__item">Basics</li>
-                    <li class="prices__item">Standard</li>
-                    <li class="prices__item">Pro care</li>
-                </ul>
+        <div class="wrapper">
+            <section class="prices">
+                <div class="prices__container prices__container_left">
+                    <h2 class="prices__h2">Prices</h2>
+                    <ul class="prices__list">
+                        <div class="prices__list__container">
+                            <li class="prices__item"><p class="prices__item__text">Basics</p><div class="prices__arrow"></div></li>
+                            <li class="prices__item"><p class="prices__item__text">Standard</p><div class="prices__arrow"></div></li>
+                            <li class="prices__item"><p class="prices__item__text">Pro care</p><div class="prices__arrow"></div></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="prices__container prices__container_rigth">
+                    <h3 class="prices__h2">Our best <span class="h2_green">gardeners</span> are 
+                        ready to help you</h3>
+                    <button class="prices__button orange-button">Contact us</button>
+                    <div class="prices__img"></div>
+                </div>
+            </section>
+        </div>
+        <div class="section__container_green">
+            <div class="wrapper">
+                <section class="contacts">
+                    <h2>Contact us</h2>
+                    <div class="contacts__container">
+                        <div class="contacts__img"></div>
+                        <div class="contacts__cities"></div>
+                    </div>
+                </section>
             </div>
-            <div class="prices__container">
-                <h3 class="h2-like">Our best gardeners are 
-                    ready to help you</h3>
-                <button class="prices__button">contact us</button>
-                <div class="prices__img"></div>
-            </div>
-        </section>
-        <section class="contacts">
-            <h2>Contact us</h2>
-            <div class="contacts__container">
-                <div class="contacts__img"></div>
-                <div class="contacts__cities"></div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer class="main-footer">
