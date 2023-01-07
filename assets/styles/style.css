@@ -72,6 +72,13 @@ li {
     color: var(--white);
 }
 
+.orange-button:active {
+    cursor: pointer;
+    background: var(--green);
+    color: var(--white);
+    border: var(--green);
+}
+
 .button__arrow {
     width: 1rem;
     height: 1rem;
@@ -117,6 +124,15 @@ li {
     font-weight: 700;
 }
 
+.header__logo:active .logo__img {
+    background: url('../icons/logo_header_fill_orange.svg');
+}
+
+.header__logo:active .logo__text {
+    color: var(--orange);
+    font-weight: 700;
+}
+
 .nav-list {
     display: flex;
 }
@@ -138,6 +154,11 @@ li {
 .nav-list__link:hover {
     font-weight: bold;
     color: var(--orange);
+}
+
+.nav-list__link:active {
+    font-weight: bold;
+    color: var(--green);
 }
 
 /* HEADER STYLES END */
@@ -202,6 +223,13 @@ li {
     cursor: pointer;
     background: var(--orange);
     color: var(--white);
+}
+
+.welcome__button:active {
+    cursor: pointer;
+    background: var(--green);
+    color: var(--white);
+    border: var(--green);
 }
 
 /* WELCOME SECTION STYLES END */
@@ -538,6 +566,11 @@ li {
     color: var(--orange);
 }
 
+.main-footer__git-link:active,
+.main-footer__rsschool-link:active {
+    color: var(--green);
+}
+
 .main-footer__socials {
     padding: 0;
     display: flex;
@@ -552,6 +585,11 @@ li {
 .socials__item:hover {
     border-radius: 50%;
     background: var(--light-green--prices-active);
+}
+
+.socials__item:active {
+    border-radius: 50%;
+    background: var(--green-contacts-active);
 }
 
 .socials__link {
