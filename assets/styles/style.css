@@ -60,7 +60,7 @@ li {
     height: 1rem;
 
     background: var(--gray-round-prices);
-    background-image: url('/assets/icons/prices_arrow.svg');
+    background-image: url('../icons/prices_arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -127,7 +127,7 @@ li {
     height: 25.4375rem;
 
     order: -1;
-    background: center url("../../assets/images/welcome_leafs.png");
+    background: center url("../images/welcome_leafs.png");
 }
 
 .welcome__content {
@@ -390,7 +390,7 @@ li {
 .prices__img {
     width: 9.5rem;
     height: 10.875rem;
-    background: url('/assets/images/prices_leafs.png');
+    background: url('../images/prices_leafs.png');
     object-fit: cover;
 }
 
@@ -420,7 +420,7 @@ li {
     width: 25rem;
     height: 31.125rem;
     order: -1;
-    background: url('/assets/images/contacts_woman.png');
+    background: url('../images/contacts_woman.png');
 }
 
 .contacts__button {
@@ -499,20 +499,20 @@ li {
 }
 
 .socials__inst {
-    background-image: url('/assets/icons/socials_instagram.svg');
+    background-image: url('../icons/socials_instagram.svg');
     
 }
 
 .socials__fb {
-    background-image: url('/assets/icons/socials_facebook.svg');
+    background-image: url('../icons/socials_facebook.svg');
 }
 
 .socials__twi {
-    background-image: url('/assets/icons/socials_twitter.svg');
+    background-image: url('../icons/socials_twitter.svg');
 }
 
 .socials__ptrst {
- background-image: url('/assets/icons/socials_pinterest.svg');
+ background-image: url('../icons/socials_pinterest.svg');
 }
 
 /* FOOTER STYLES END */
