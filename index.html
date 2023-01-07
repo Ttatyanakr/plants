@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="icon" href="assets/icons/favicon.ico">
 </head>
@@ -28,7 +28,7 @@
                             <a href="#about" class="nav-list__link">About us</a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#service" class="nav-list__link">Service</a>
+                            <a href="#services" class="nav-list__link">Service</a>
                         </li>
                         <li class="nav-list__item">
                             <a href="#prices" class="nav-list__link">Price</a>
@@ -45,7 +45,7 @@
     <main class="main-content">
         <div class="section__container_green">
             <div class="wrapper">
-                <section class="welcome">
+                <section class="welcome" id="welcome">
                     <div class="welcome__content">
                         <h2 class="welcome__h2">We grow <span class="h2_green">plants</span> and give you oxygen</h2>
                         <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and 
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__content">
                     <h2 class="about__h2">We are <span class="about__h2_orange">professional experienced</span> gardeners</h2>
                     <p class="about__text">Lorem Ipsum is simply dummy text of the printing and 
@@ -72,7 +72,7 @@
         </div>
         <div class="section__container_green">
             <div class="wrapper">
-                <section class="services">
+                <section class="services" id="services">
                     <div class="services__top-container">
                         <h2 class="services__h2">Service and our projects</h2>
                         <div class="services__filter">
@@ -117,16 +117,18 @@
             </div>
         </div>
         <div class="wrapper">
-            <section class="prices">
+            <section class="prices" id="prices">
                 <div class="prices__container prices__container_left">
                     <h2 class="prices__h2">Prices</h2>
-                    <ul class="prices__list">
-                        <div class="prices__list__container">
+                    <div class="prices__list__container">
+                        <ul class="prices__list">
                             <li class="prices__item"><p class="prices__item__text">Basics</p><div class="prices__arrow button__arrow"></div></li>
                             <li class="prices__item"><p class="prices__item__text">Standard</p><div class="prices__arrow button__arrow"></div></li>
                             <li class="prices__item"><p class="prices__item__text">Pro care</p><div class="prices__arrow button__arrow"></div></li>
-                        </div>
-                    </ul>
+                            <!-- <div class="prices__list__container">
+                            </div> -->
+                        </ul>
+                    </div>
                 </div>
                 <div class="prices__container prices__container_rigth">
                     <h3 class="prices__h2">Our best <span class="h2_green">gardeners</span> are 
@@ -138,7 +140,7 @@
         </div>
         <div class="section__container_green">
             <div class="wrapper">
-                <section class="contacts">
+                <section class="contacts" id="contacts">
                     <h2 class="contacts__h2">Contact us</h2>
                     <div class="contacts__img"></div>
                     <div class="contacts__button">
@@ -152,8 +154,8 @@
 
     <div class="wrapper">
         <footer class="main-footer">
-            <div class="main-footer__text main-footer__git"><div class="main-footer__copyright-sign">&copy;</div> 2022 <a class="main-footer__copyright-link main-footer__git-link" href="http://">github</a></div>
-            <div class="main-footer__text main-footer__rsschool"><a class="main-footer__copyright-link main-footer__rsschool-link" href="http://">Rolling Scopes School</a></div>
+            <div class="main-footer__text main-footer__git"><div class="main-footer__copyright-sign">&copy;</div> 2022 <a class="main-footer__copyright-link main-footer__git-link" href="https://github.com/Ttatyanakr">github</a></div>
+            <div class="main-footer__text main-footer__rsschool"><a class="main-footer__copyright-link main-footer__rsschool-link" href="https://rs.school/js-stage0/">Rolling Scopes School</a></div>
             <ul class="main-footer__socials">
                 <li class="socials__item">
                     <a href="" class="socials__link socials__inst"></a>
