@@ -8,8 +8,10 @@
     --gray: #636060; 
     --black: #000000;
     --black-nav: #010201;
-    --border-gray: #E3E1D5;
+    --gray-border: #E3E1D5;
     --gray-round-prices: #D9D9D9;
+    --light-green-button: #D6E7D2;
+    --gray-round-contacts: #AEA1A1;
 }
 
 body {
@@ -53,6 +55,16 @@ li {
     border-radius: 5px;
 }
 
+.button__arrow {
+    width: 1rem;
+    height: 1rem;
+
+    background: var(--gray-round-prices);
+    background-image: url('/assets/icons/prices_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
 
 
 /* HEADER STYLES START */
@@ -264,7 +276,7 @@ li {
     width: 20.625rem;
     height: 28.125rem;
 
-    border: 1px solid var(--border-gray);
+    border: 1px solid var(--gray-border);
     border-radius: 1.25rem;
     overflow: hidden; 
 
@@ -296,7 +308,7 @@ li {
 /* PRICES SECTION STYLES START */
 
 .prices {
-    height: 35rem;
+    height: 32.5em;
     padding-top: 2.5rem;
     display: flex;
     justify-content: space-between;
@@ -322,7 +334,7 @@ li {
     display: flex;
     align-items: center;
     
-    border: 1px solid var(--border-gray);
+    border: 1px solid var(--gray-border);
     border-radius: 20px;
 }
 
@@ -351,17 +363,6 @@ li {
     font-size: 1.25rem;
 }
 
-.prices__arrow {
-    width: 1rem;
-    height: 1rem;
-    margin-right: 2.5rem;
-    background: var(--gray-round-prices);
-    background-image: url('/assets/icons/prices_arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-
 .prices__container_rigth {
     max-height: 25.3125rem;
     align-items: flex-end;
@@ -377,6 +378,10 @@ li {
     color: var(--black);
 }
 
+.prices__arrow {
+    margin-right: 2.5rem;
+}
+
 .prices__button {
     font-weight: 700;
     background-color: white;
@@ -390,3 +395,124 @@ li {
 }
 
 /* PRICES SECTION STYLES END */
+
+
+
+/* CONTACTS SECTION STYLES START */
+
+.contacts {
+    height: 34.375rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__h2 {
+    margin-top: 3.75rem;
+    margin-left: 3rem;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.contacts__img {
+    margin-top: auto;
+    width: 25rem;
+    height: 31.125rem;
+    order: -1;
+    background: url('/assets/images/contacts_woman.png');
+}
+
+.contacts__button {
+    width: 28.125rem;
+    height: 3.125rem;
+    margin-top: 9.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--light-green-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contacts__button__text {
+    margin-left: 1.25rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+}
+
+.contacts__arrow {
+    background-color: var(--gray-round-contacts);
+    margin-right: 2.25rem;
+}
+
+/* CONTACTS SECTION STYLES END */
+
+
+
+/* FOOTER STYLES START */
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8.125rem;
+}
+
+.main-footer__copyright-link {
+    color: var(--black);
+}
+
+.main-footer__text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.main-footer__git {
+    width: 10.625rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer__rsschool-link {
+    display: block;
+    margin-left: 1rem;
+}
+
+.main-footer__socials {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 11.75rem;
+}
+
+.socials__item {
+    display: flex;
+}
+
+.socials__link {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socials__inst {
+    background-image: url('/assets/icons/socials_instagram.svg');
+    
+}
+
+.socials__fb {
+    background-image: url('/assets/icons/socials_facebook.svg');
+}
+
+.socials__twi {
+    background-image: url('/assets/icons/socials_twitter.svg');
+}
+
+.socials__ptrst {
+ background-image: url('/assets/icons/socials_pinterest.svg');
+}
+
+/* FOOTER STYLES END */
