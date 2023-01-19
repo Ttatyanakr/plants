@@ -872,12 +872,21 @@ li {
         opacity: 0;
         border-radius: 1.25rem;
         transition-property: opacity, box-shadow;
-        transition-duration: 0.7s;
+        transition-duration: 1s;
     }
     .nav-list__item {
         display: flex;
+        width: 75%;
         height: 100%;
         align-items: center;
+    }
+    .nav-list__item:not(:last-child) {
+        border-bottom: 1px solid var(--green);
+    }
+    .nav-list__link {
+        width: 100%;
+        font-weight: 700;
+        color: var(--green);
     }
     .nav-list__item:hover .nav-list__link,
     .nav-list__item:active .nav-list__link,
@@ -885,8 +894,8 @@ li {
     .nav-list__link:active {
         width: 100%;
         text-decoration: underline;
-        font-weight: 700;
         color: var(--orange);
+        transition: 0s;
     }
     .main-header__burger {
         margin-left: auto;
