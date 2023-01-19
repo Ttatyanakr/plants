@@ -1,6 +1,6 @@
 // BURGER handler
 
-const burgerArea = document.querySelector('.header__nav');
+const burgerArea = document.querySelector('.main-header__burger');
 const burgerMenu = document.querySelector('.nav-list');
 
 let burgerCall = () => {
@@ -10,8 +10,9 @@ let burgerCall = () => {
 }
 
 let burgerClose = (e) => {
-    if(!e.target.matches('.header__nav, .header__nav *')) {
+    if(!e.target.matches('.header__nav, .header__nav *') || e.target.matches('.nav-list__link')) {
         burgerMenu.classList.remove('nav-list_open');
+        TimeRanges(1000);
     }
 }
 
