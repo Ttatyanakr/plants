@@ -8,7 +8,6 @@ let burgerCall = () => {
         burgerMenu.classList.add('nav-list_open');
     }
 }
-
 let burgerClose = (e) => {
     if(!e.target.matches('.header__nav, .header__nav *') || e.target.matches('.nav-list__link')) {
         burgerMenu.classList.remove('nav-list_open');
@@ -32,7 +31,6 @@ const serviceLawn = document.querySelectorAll('.service__lawn');
 let filterArr = [];
 
 let clickGarden = () => {
-    // filterGarden.classList.toggle('services__filter__button_active');
     if (filterArr.indexOf(serviceGarden) == 0) {
         filterArr.shift();
     } else if (filterArr.indexOf(serviceGarden) == 1) {
@@ -43,7 +41,6 @@ let clickGarden = () => {
     doFilter();
 }
 let clickLawn = () => {
-    // filterLawn.classList.toggle('services__filter__button_active');
     if (filterArr.indexOf(serviceLawn) == 0) {
         filterArr.shift();
     } else if (filterArr.indexOf(serviceLawn) == 1) {
@@ -54,7 +51,6 @@ let clickLawn = () => {
     doFilter();
 }
 let clickPlanting = () => {
-    // filterPlanting.classList.toggle('services__filter__button_active');
     if (filterArr.indexOf(servicePlanting) == 0) {
         filterArr.shift();
     } else if (filterArr.indexOf(servicePlanting) == 1) {
@@ -66,6 +62,7 @@ let clickPlanting = () => {
 }
 
 let doFilter = () => {
+    //remove third (first choosen) filter option
     if (filterArr.length > 2) {
         filterArr.shift();
     } 
@@ -75,10 +72,12 @@ let doFilter = () => {
     filterArr.includes(serviceLawn) ? filterLawn.classList.add('services__filter__button_active') : filterLawn.classList.remove('services__filter__button_active');
     filterArr.includes(servicePlanting) ? filterPlanting.classList.add('services__filter__button_active') : filterPlanting.classList.remove('services__filter__button_active');
 
-    //add blur for unliltres cards
+    //add blur for unfiltred cards
     (!filterArr.includes(serviceGarden)) ? serviceGarden.forEach(el => el.classList.add('blur')) : serviceGarden.forEach(el => el.classList.remove('blur'));
     (!filterArr.includes(serviceLawn)) ? serviceLawn.forEach(el => el.classList.add('blur')) : serviceLawn.forEach(el => el.classList.remove('blur'));
     (!filterArr.includes(servicePlanting)) ? servicePlanting.forEach(el => el.classList.add('blur')) : servicePlanting.forEach(el => el.classList.remove('blur'));
+
+    //remove blur if filter didn't pick
     if (filterArr.length == 0) {
         serviceGarden.forEach(el => el.classList.remove('blur'));
         serviceLawn.forEach(el => el.classList.remove('blur'));
@@ -89,26 +88,3 @@ let doFilter = () => {
 filterGarden.addEventListener('click', clickGarden);
 filterPlanting.addEventListener('click', clickPlanting);
 filterLawn.addEventListener('click', clickLawn);
-
-// let selectGarden = () => {
-//     serviceGarden.forEach(el => el.classList.toggle('blur'));
-//     filterGarden.classList.toggle('services__filter__button_active');
-// }
-
-// let selectPlanting = () => {
-//     servicePlanting.forEach(el => el.classList.toggle('blur'));
-//     filterPlanting.classList.toggle('services__filter__button_active');
-// }
-
-// let selectLawn = () => {
-//     serviceLawn.forEach(el => el.classList.toggle('blur'));
-//     filterLawn.classList.toggle('services__filter__button_active');
-// }
-
-// let selectFilter = () => {
-    
-// }
-
-// filterGarden.addEventListener('click', selectGarden);
-// filterPlanting.addEventListener('click', selectPlanting);
-// filterLawn.addEventListener('click', selectLawn);
