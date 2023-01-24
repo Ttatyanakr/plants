@@ -19,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    transition-duration: 1s;
     }
 
 :hover {
@@ -349,6 +350,9 @@ li {
     overflow: hidden; 
 
     text-align: center;
+
+    filter: blur(0);
+    transition: blur 1s;
 }
 
 .service__img {
@@ -1166,7 +1170,6 @@ li {
 
 .blur {
     filter: blur(0.5rem);
-    transition: blur 1s;
 }
 
 .services__filter__button_active {
