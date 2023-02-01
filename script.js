@@ -62,7 +62,7 @@ let clickPlanting = () => {
 }
 
 let doFilter = () => {
-    //remove third (first choosen) filter option
+    //remove third (first selected) filter option
     if (filterArr.length > 2) {
         filterArr.shift();
     } 
@@ -88,3 +88,6 @@ let doFilter = () => {
 filterGarden.addEventListener('click', clickGarden);
 filterPlanting.addEventListener('click', clickPlanting);
 filterLawn.addEventListener('click', clickLawn);
+
+
+

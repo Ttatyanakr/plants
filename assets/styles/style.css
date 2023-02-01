@@ -19,7 +19,6 @@
 
 html {
     scroll-behavior: smooth;
-    transition-duration: 1s;
     }
 
 :hover {
@@ -351,8 +350,7 @@ li {
 
     text-align: center;
 
-    filter: blur(0);
-    transition: blur 1s;
+    transition: filter .5s ease-in;
 }
 
 .service__img {
@@ -420,12 +418,25 @@ li {
 
 .prices__item {
     width: 15.625rem;
+    background: var(--light-green);
+    border-radius: 20px;
+}
+
+.prices__item__spoiler {
+    height: 3.125rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.prices__item__spoiler[open] {
+    height: 15.875rem;
+}
+
+.prices__item__summary {
     height: 3.125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--light-green);
-    border-radius: 20px;
 }
 
 .prices__item:hover {
@@ -439,7 +450,6 @@ li {
 }
 
 .prices__item__text {
-    margin-left: 2.5rem;
     color: var(--black);
     font-weight: 700;
     font-size: 1.25rem;
@@ -459,10 +469,6 @@ li {
     font-size: 2.5rem;
     line-height: 125%;
     color: var(--black);
-}
-
-.prices__arrow {
-    margin-right: 2.5rem;
 }
 
 .prices__button {
