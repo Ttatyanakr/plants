@@ -422,26 +422,16 @@ li {
     border-radius: 20px;
 }
 
-.prices__item__spoiler {
-    height: 3.125rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-}
-
-.prices__item__spoiler[open] {
-    height: 15.875rem;
-}
-
-.prices__item__summary {
-    height: 3.125rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .prices__item:hover {
     cursor: pointer;
     background: var(--light-green--prices-active);
+}
+
+.prices__item__spoiler {
+    height: 3.125rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 20px;
 }
 
 .prices__item:hover .prices__arrow {
@@ -449,10 +439,79 @@ li {
     background-image: url('../icons/prices_arrow_white.svg');
 }
 
-.prices__item__text {
+.prices__item__spoiler[open] {
+    height: 154px;
+    background-color: var(--light-green--prices-active);
+}
+
+.prices__item__spoiler[open]:hover {
+    cursor: default;
+}
+
+.prices__item__spoiler[open] .prices__arrow {
+    background-color: var(--gray-round-contacts);
+    background-image: url('../icons/prices_arrow_white.svg');
+    transform: rotate(180deg);
+}
+
+.prices__item__summary {
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     color: var(--black);
     font-weight: 700;
     font-size: 1.25rem;
+}
+
+.prices__item__line {
+    margin: 0;
+    margin-top: -6px;
+}
+
+.prices__item__description {
+    margin: 0;
+    margin-top: 6px;
+    font-size: 10px;
+    color: var(--light-gray);
+    line-height: 10px;
+}
+
+.prices__item__price {
+    margin: 6px 0 12px 0;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.prices__item__price-num {
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.prices__item__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.375rem;
+    height: 1.5rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--light-gray)
+}
+
+.prices__item__button:hover {
+    cursor: pointer;
+    background-color: var(--green-contacts-active);
+}
+
+.prices__item__button:active {
+    background-color: var(--green);
+    color: var(--light-green);
 }
 
 .prices__container_rigth {
@@ -1098,9 +1157,8 @@ li {
         width: 11.25rem;
         height: 3.125rem;
     }
-    .prices__item__text {
+    .prices__item__summary {
         font-size: 0.9375rem;
-        margin-left: 1.875rem;
     }
     .prices__container_rigth {
         height: 7.875rem;
@@ -1181,6 +1239,10 @@ li {
 .services__filter__button_active {
     background: var(--orange);
     color: var(--white);
+}
+
+.prices__list__container_active {
+    height: 20.5rem;
 }
 
 /* JS STYLES END */

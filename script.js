@@ -91,3 +91,42 @@ filterLawn.addEventListener('click', clickLawn);
 
 
 
+//PRICES accordion styles
+
+const pricesListContainer = document.querySelector(".prices__list__container");
+const pricesList = document.querySelector(".prices__list");
+const priceItem = document.querySelectorAll(".prices__item");
+
+// let priceArr = [];
+
+// priceItem.forEach (el => el.addEventListener('click', () => {
+//     const details = el.querySelector('details');
+//     const summary = el.querySelector('.prices__item__summary');
+//     const orderButton = el.querySelector('.prices__item__button');
+
+//     // pricesListContainer.classList.add('prices__list__container_active');
+
+//     el.onclick = (item) => {
+//         if (details.open && item.target != summary && item.target != orderButton) {
+//             details.removeAttribute("open");
+//             // details.open = false;
+//         }
+//     }
+// }
+// ));
+
+function onToggle(event) {
+    if (event.target.open) {
+      document.querySelectorAll(".prices__item > details[open]").forEach((el) => {
+        if (el === event.target) {
+          return;
+        }
+  
+        el.open = false;
+      });
+    }
+  }
+
+  document
+    .querySelectorAll(".prices__item > details")
+    .forEach((el) => el.addEventListener("toggle", onToggle));
