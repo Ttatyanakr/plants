@@ -385,7 +385,7 @@ li {
     justify-content: space-between;
 }
 
-.prices__container {
+.prices__container_rigth {
     height: 25.3125rem;
     display: flex;
     flex-direction: column;
@@ -393,24 +393,27 @@ li {
 }
 
 .prices__container_left {
-    height: 24.25rem;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
 .prices__list__container {
     width: 20.75rem;
-    height: 17.5rem;
+    min-height: 17.5rem;
     margin: 0;
+    margin-top: 3.75rem;
     display: flex;
-    align-items: center;
     
     border: 1px solid var(--gray-border);
     border-radius: 20px;
 }
 
 .prices__list {
-    height: 13.375rem;
+    min-height: 13.375rem;
     margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 0;
     display: flex;
     flex-direction: column;
