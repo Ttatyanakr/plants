@@ -878,6 +878,9 @@ li {
         height: 3.125rem;
         margin-top: 0;
     }
+    .contacts__cities {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1290,12 +1293,33 @@ li {
         margin-top: 1.5rem;
         margin-bottom: 0;
     }
-    .contacts__button {
+    .contacts__adresses {
         width: 90%;
-        margin-top: 5rem;
+    }
+    .contacts__button {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 14px;
     }
     .contacts__arrow {
         margin-right: 1.25rem;
+    }
+    .contacts__button__text {
+        font-size: 1rem;
+    }
+    .address__table td {
+        font-size: 14px;
+    }
+    .address__table {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .address__info {
+        padding: 0;
+    }
+    .table__name {
+        width: 7rem;
     }
     .contacts__img {
         width: 6.25rem;
