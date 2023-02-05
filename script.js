@@ -97,31 +97,12 @@ const pricesListContainer = document.querySelector(".prices__list__container");
 const pricesList = document.querySelector(".prices__list");
 const priceItem = document.querySelectorAll(".prices__item");
 
-// let priceArr = [];
-
-// priceItem.forEach (el => el.addEventListener('click', () => {
-//     const details = el.querySelector('details');
-//     const summary = el.querySelector('.prices__item__summary');
-//     const orderButton = el.querySelector('.prices__item__button');
-
-//     // pricesListContainer.classList.add('prices__list__container_active');
-
-//     el.onclick = (item) => {
-//         if (details.open && item.target != summary && item.target != orderButton) {
-//             details.removeAttribute("open");
-//             // details.open = false;
-//         }
-//     }
-// }
-// ));
-
 function onToggle(event) {
     if (event.target.open) {
       document.querySelectorAll(".prices__item > details[open]").forEach((el) => {
         if (el === event.target) {
           return;
         }
-  
         el.open = false;
       });
     }
@@ -130,3 +111,60 @@ function onToggle(event) {
   document
     .querySelectorAll(".prices__item > details")
     .forEach((el) => el.addEventListener("toggle", onToggle));
+
+
+
+// CONTACTS location select script
+
+let citySelect = document.querySelector('.contacts__button__text');
+const cityArr = document.querySelectorAll('.cities__name');
+const cityNames = [];
+const addressList = document.querySelector('.address__list');
+const addressItem = document.querySelectorAll(".address__item");
+const contactsButton = document.querySelector('.contacts__button');
+
+cityArr.forEach(city => {
+    cityNames.push(city.textContent);
+})
+
+let index;
+cityArr.forEach(city => {
+    city.addEventListener('click', () => {
+        citySelect.textContent = city.textContent;
+        for (let i = 0; i < cityArr.length; i++) {
+            if (city.textContent == cityNames[i]) {
+                index = i;
+                console.log(index);
+            }
+        }
+    })
+})
+
+let setAddress = () => {
+    addressItem.forEach(el => el.classList.remove("visible"));
+    for (let i = 0; i < addressItem.length; i++) {
+        if (i == index) {
+            console.log(i, addressItem[i]);
+            addressItem[i].classList.add("visible");
+            return;
+        }
+    }
+}
+
+const addressDetails = document.querySelector(".contacts__adresses > details");
+const showAddress = () => {
+    if (!addressDetails.open) {
+        console.log('open');
+        addressList.classList.remove("visible");
+    } else if (addressDetails.open) {
+        console.log('close');
+        if (index != undefined) {
+            addressList.classList.add("visible");
+            setAddress();
+        }
+    }
+}
+
+contactsButton.addEventListener('click', showAddress);
+
+
