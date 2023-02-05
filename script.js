@@ -118,11 +118,13 @@ function onToggle(event) {
 
 let citySelect = document.querySelector('.contacts__button__text');
 const cityArr = document.querySelectorAll('.cities__name');
-const cityNames = [];
+const contactsButton = document.querySelector('.contacts__button');
 const addressList = document.querySelector('.address__list');
 const addressItem = document.querySelectorAll(".address__item");
-const contactsButton = document.querySelector('.contacts__button');
+const addressDetails = document.querySelector(".contacts__adresses > details");
 
+//initialize new array to compare click & cities list
+const cityNames = [];
 cityArr.forEach(city => {
     cityNames.push(city.textContent);
 })
@@ -134,7 +136,6 @@ cityArr.forEach(city => {
         for (let i = 0; i < cityArr.length; i++) {
             if (city.textContent == cityNames[i]) {
                 index = i;
-                console.log(index);
             }
         }
     })
@@ -144,20 +145,16 @@ let setAddress = () => {
     addressItem.forEach(el => el.classList.remove("visible"));
     for (let i = 0; i < addressItem.length; i++) {
         if (i == index) {
-            console.log(i, addressItem[i]);
             addressItem[i].classList.add("visible");
             return;
         }
     }
 }
 
-const addressDetails = document.querySelector(".contacts__adresses > details");
 const showAddress = () => {
     if (!addressDetails.open) {
-        console.log('open');
         addressList.classList.remove("visible");
     } else if (addressDetails.open) {
-        console.log('close');
         if (index != undefined) {
             addressList.classList.add("visible");
             setAddress();

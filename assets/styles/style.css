@@ -385,7 +385,7 @@ li {
     justify-content: space-between;
 }
 
-.prices__container {
+.prices__container_rigth {
     height: 25.3125rem;
     display: flex;
     flex-direction: column;
@@ -393,24 +393,27 @@ li {
 }
 
 .prices__container_left {
-    height: 24.25rem;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
 .prices__list__container {
     width: 20.75rem;
-    height: 17.5rem;
+    min-height: 17.5rem;
     margin: 0;
+    margin-top: 3.75rem;
     display: flex;
-    align-items: center;
     
     border: 1px solid var(--gray-border);
     border-radius: 20px;
 }
 
 .prices__list {
-    height: 13.375rem;
+    min-height: 13.375rem;
     margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -878,6 +881,9 @@ li {
         height: 3.125rem;
         margin-top: 0;
     }
+    .contacts__cities {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 990px) {
@@ -992,7 +998,7 @@ li {
         min-height: 34.0625rem;
     }
     .prices__container_left {
-        height: 23.875rem;
+        min-height: 23.875rem;
     }
     .prices__h2 {
         font-size: 2.1875rem;
@@ -1198,6 +1204,9 @@ li {
     .prices__h2 {
         margin-left: 0;
     }
+    .prices__list__container {
+        margin-top: 2.85rem;
+    }
     .prices__container_rigth {
         height: 10rem;
         margin-top: 1.25rem;
@@ -1253,25 +1262,29 @@ li {
         justify-content: flex-start;
     }
     .prices {
-        height: 30.625rem;
-        min-height: auto;
+        min-height: 30.625rem;
     }
     .prices__container_left {
-        height: 19rem;
+        min-height: 19rem;
     }
     .prices__list__container {
         width: 14rem;
-        height: 14.625rem;
+        min-height: 14.625rem;
+        margin-top: 2.5rem;
     }
     .prices__list {
-        height: 11rem;
+        min-height: 11rem;
     }
     .prices__item {
         width: 11.25rem;
-        height: 3.125rem;
+        min-height: 3.125rem;
     }
     .prices__item__summary {
         font-size: 0.9375rem;
+    }
+    .prices__item__spoiler {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .prices__container_rigth {
         height: 7.875rem;
@@ -1290,12 +1303,33 @@ li {
         margin-top: 1.5rem;
         margin-bottom: 0;
     }
-    .contacts__button {
+    .contacts__adresses {
         width: 90%;
-        margin-top: 5rem;
+    }
+    .contacts__button {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 14px;
     }
     .contacts__arrow {
         margin-right: 1.25rem;
+    }
+    .contacts__button__text {
+        font-size: 1rem;
+    }
+    .address__table td {
+        font-size: 14px;
+    }
+    .address__table {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .address__info {
+        padding: 0;
+    }
+    .table__name {
+        width: 7rem;
     }
     .contacts__img {
         width: 6.25rem;
