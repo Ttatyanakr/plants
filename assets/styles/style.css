@@ -12,6 +12,7 @@
     --gray-border: #E3E1D5;
     --gray-round-prices: #D9D9D9;
     --gray-round-contacts: #AEA1A1;
+    --green-cities: #DCE9D9;
     --black: #000000;
     --black-nav: #010201;
     --white: #FFFFFF;
@@ -19,7 +20,6 @@
 
 html {
     scroll-behavior: smooth;
-    transition-duration: 1s;
     }
 
 :hover {
@@ -351,8 +351,7 @@ li {
 
     text-align: center;
 
-    filter: blur(0);
-    transition: blur 1s;
+    transition: filter .5s ease-in;
 }
 
 .service__img {
@@ -420,17 +419,23 @@ li {
 
 .prices__item {
     width: 15.625rem;
-    height: 3.125rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: var(--light-green);
     border-radius: 20px;
 }
 
 .prices__item:hover {
-    cursor: pointer;
     background: var(--light-green--prices-active);
+}
+
+.prices__item__spoiler {
+    height: 3.125rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 20px;
+}
+
+.prices__item__summary {
+    cursor: pointer;
 }
 
 .prices__item:hover .prices__arrow {
@@ -438,11 +443,79 @@ li {
     background-image: url('../icons/prices_arrow_white.svg');
 }
 
-.prices__item__text {
-    margin-left: 2.5rem;
+.prices__item__spoiler[open] {
+    height: 154px;
+    background-color: var(--light-green--prices-active);
+}
+
+.prices__item__spoiler[open]:hover {
+    cursor: default;
+}
+
+.prices__item__spoiler[open] .prices__arrow {
+    background-color: var(--gray-round-contacts);
+    background-image: url('../icons/prices_arrow_white.svg');
+    transform: rotate(180deg);
+}
+
+.prices__item__summary {
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     color: var(--black);
     font-weight: 700;
     font-size: 1.25rem;
+}
+
+.prices__item__line {
+    margin: 0;
+    margin-top: -6px;
+}
+
+.prices__item__description {
+    margin: 0;
+    margin-top: 6px;
+    font-size: 10px;
+    color: var(--light-gray);
+    line-height: 10px;
+}
+
+.prices__item__price {
+    margin: 6px 0 12px 0;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.prices__item__price-num {
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.prices__item__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.375rem;
+    height: 1.5rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--light-gray)
+}
+
+.prices__item__button:hover {
+    cursor: pointer;
+    background-color: var(--green-contacts-active);
+}
+
+.prices__item__button:active {
+    background-color: var(--green);
+    color: var(--light-green);
 }
 
 .prices__container_rigth {
@@ -459,10 +532,6 @@ li {
     font-size: 2.5rem;
     line-height: 125%;
     color: var(--black);
-}
-
-.prices__arrow {
-    margin-right: 2.5rem;
 }
 
 .prices__button {
@@ -509,10 +578,13 @@ li {
     background-repeat: no-repeat;
 }
 
+.contacts__cities {
+    margin-top: 9.25rem;
+}
+
 .contacts__button {
     width: 28.125rem;
     height: 3.125rem;
-    margin-top: 9.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -540,6 +612,100 @@ li {
 
 .contacts__button:hover .contacts__arrow {
     background-color: var(--greeny-gray-round-active);
+}
+
+.contacts__cities[open] {
+    height: 17.75rem;
+    background-color: var(--green-cities);
+}
+
+.contacts__cities[open] .contacts__button {
+    background-color: var(--green-contacts-active);
+}
+
+.contacts__cities[open] .contacts__arrow {
+    background-color: var(--greeny-gray-round-active);
+    transform: rotate(180deg);
+}
+
+.cities__list {
+    width: 82.5%;
+    padding: 0;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.cities__name {
+    width: 100%;
+    height: 2.875rem;
+    line-height: 300%;
+    letter-spacing: 0.05em;
+    color: var(--green);
+    border-bottom: 1px solid var(--gray-round-prices);
+}
+
+.cities__name:hover {
+    cursor: pointer;
+    color: var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.address__list {
+    display: none;
+    width: 28rem;
+    height: 13.375rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 2.875rem;
+}
+
+.address__item {
+    display: none;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    flex-direction: column;
+    border: 1px solid var(--black);
+    border-radius: 1.25rem;
+}
+
+.visible {
+    display: flex;
+}
+
+.address__info {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.address__table {
+    border: none;
+}
+
+.table__name {
+    color: var(--black);
+}
+
+.table__tel a {
+    color: var(--light-gray);
+}
+
+.address__button {
+    width: 7.625rem;
+    height: 1.625rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.625rem;
+    color: var(--light-gray);
+    font-family: 'Inika';
+    font-weight: 700;
+    border: 1px solid var(--orange);
+    border-radius: 0.3125rem;
+    background-color: var(--light-green);
 }
 
 /* CONTACTS SECTION STYLES END */
@@ -1092,9 +1258,8 @@ li {
         width: 11.25rem;
         height: 3.125rem;
     }
-    .prices__item__text {
+    .prices__item__summary {
         font-size: 0.9375rem;
-        margin-left: 1.875rem;
     }
     .prices__container_rigth {
         height: 7.875rem;
@@ -1175,6 +1340,10 @@ li {
 .services__filter__button_active {
     background: var(--orange);
     color: var(--white);
+}
+
+.prices__list__container_active {
+    height: 20.5rem;
 }
 
 /* JS STYLES END */

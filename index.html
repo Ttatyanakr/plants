@@ -128,9 +128,39 @@
                     <h2 class="prices__h2">Prices</h2>
                     <div class="prices__list__container">
                         <ul class="prices__list">
-                            <li class="prices__item"><p class="prices__item__text">Basics</p><div class="prices__arrow button__arrow"></div></li>
-                            <li class="prices__item"><p class="prices__item__text">Standard</p><div class="prices__arrow button__arrow"></div></li>
-                            <li class="prices__item"><p class="prices__item__text">Pro care</p><div class="prices__arrow button__arrow"></div></li>
+                            <li class="prices__item">
+                                <details class="prices__item__spoiler">
+                                    <summary class="prices__item__summary">
+                                        Basics<div class="prices__arrow button__arrow"></div>
+                                    </summary>
+                                    <hr class="prices__item__line">
+                                    <p class="prices__item__description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__item__price"><span class="prices__item__price-num">$15</span> / per hour</p>
+                                    <a href="#contacts" class="prices__item__button">Order</a>
+                                </details>
+                            </li>
+                            <li class="prices__item">
+                                <details class="prices__item__spoiler">
+                                    <summary class="prices__item__summary">
+                                        Standard<div class="prices__arrow button__arrow"></div>
+                                    </summary>
+                                    <hr class="prices__item__line">
+                                    <p class="prices__item__description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__item__price"><span class="prices__item__price-num">$25</span> / per hour</p>
+                                    <a href="#contacts" class="prices__item__button">Order</a>
+                                </details>
+                            </li>
+                            <li class="prices__item">
+                                <details class="prices__item__spoiler">
+                                    <summary class="prices__item__summary">
+                                        Pro care<div class="prices__arrow button__arrow"></div>
+                                    </summary>
+                                    <hr class="prices__item__line">
+                                    <p class="prices__item__description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__item__price"><span class="prices__item__price-num">$35</span> / per hour</p>
+                                    <a href="#contacts" class="prices__item__button">Order</a>
+                                </details>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -147,9 +177,97 @@
                 <section class="contacts" id="contacts">
                     <h2 class="contacts__h2">Contact us</h2>
                     <div class="contacts__img"></div>
-                    <div class="contacts__button">
-                        <p class="contacts__button__text">City</p>
-                        <div class="contacts__arrow button__arrow"></div>
+                    <div class="contacts__adresses">
+                        <details class="contacts__cities">
+                            <summary class="contacts__button">
+                                <p class="contacts__button__text">City</p>
+                                <div class="contacts__arrow button__arrow"></div>
+                            </summary>
+                            <ul class="cities__list">
+                                <li class="cities__name">Canandaigua, NY</li>
+                                <li class="cities__name">New York City</li>
+                                <li class="cities__name">Yonkers, NY</li>
+                                <li class="cities__name">Sherrill, NY</li>
+                            </ul>
+                        </details>
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <address class="address__info">
+                                    <table class="address__table">
+                                        <tr class="table__city">
+                                            <td class="table__name">City:</td>
+                                            <td>Canandaigua, NY</td>
+                                        </tr>
+                                        <tr class="table__phone">
+                                            <td class="table__name">Phone:</td>
+                                            <td class="table__tel"><a href="tel:+1	585	393 0001">+1 585 393 0001</a></td>
+                                        </tr>
+                                        <tr class="table__office">
+                                            <td class="table__name">Office adress:</td>
+                                            <td>151 Charlotte Street</td>
+                                        </tr>
+                                    </table>
+                                </address>
+                                <button class="address__button">Call us</button>
+                            </li>
+                            <li class="address__item">
+                                <address class="address__info">
+                                    <table class="address__table">
+                                        <tr class="table__city">
+                                            <td class="table__name">City:</td>
+                                            <td>New York City</td>
+                                        </tr>
+                                        <tr class="table__phone">
+                                            <td class="table__name">Phone:</td>
+                                            <td class="table__tel"><a href="tel:+1	212	456 0002">+1 212 456 0002</a></td>
+                                        </tr>
+                                        <tr class="table__office">
+                                            <td class="table__name">Office adress:</td>
+                                            <td>9 East 91st Street</td>
+                                        </tr>
+                                    </table>
+                                </address>
+                                <button class="address__button">Call us</button>
+                            </li>
+                            <li class="address__item">
+                                <address class="address__info">
+                                    <table class="address__table">
+                                        <tr class="table__city">
+                                            <td class="table__name">City:</td>
+                                            <td>Yonkers, NY</td>
+                                        </tr>
+                                        <tr class="table__phone">
+                                            <td class="table__name">Phone:</td>
+                                            <td class="table__tel"><a href="tel:+1 914 678 0003">+1 914 678 0003</a></td>
+                                        </tr>
+                                        <tr class="table__office">
+                                            <td class="table__name">Office adress:</td>
+                                            <td>511 Warburton Ave</td>
+                                        </tr>
+                                    </table>
+                                </address>
+                                <button class="address__button">Call us</button>
+                            </li>
+                            <li class="address__item">
+                                <address class="address__info">
+                                    <table class="address__table">
+                                        <tr class="table__city">
+                                            <td class="table__name">City:</td>
+                                            <td>Sherrill, NY</td>
+                                        </tr>
+                                        <tr class="table__phone">
+                                            <td class="table__name">Phone:</td>
+                                            <td class="table__tel"><a href="tel:+1	315	908 0004">+1 315 908 0004</a></td>
+                                        </tr>
+                                        <tr class="table__office">
+                                            <td class="table__name">Office adress:</td>
+                                            <td>14 WEST Noyes BLVD</td>
+                                        </tr>
+                                    </table>
+                                </address>
+                                <button class="address__button">Call us</button>
+                            </li>
+                        </ul>
                     </div>
                 </section>
             </div>
