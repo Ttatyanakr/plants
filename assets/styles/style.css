@@ -998,7 +998,7 @@ li {
         min-height: 34.0625rem;
     }
     .prices__container_left {
-        height: 23.875rem;
+        min-height: 23.875rem;
     }
     .prices__h2 {
         font-size: 2.1875rem;
@@ -1204,6 +1204,9 @@ li {
     .prices__h2 {
         margin-left: 0;
     }
+    .prices__list__container {
+        margin-top: 2.85rem;
+    }
     .prices__container_rigth {
         height: 10rem;
         margin-top: 1.25rem;
@@ -1259,25 +1262,29 @@ li {
         justify-content: flex-start;
     }
     .prices {
-        height: 30.625rem;
-        min-height: auto;
+        min-height: 30.625rem;
     }
     .prices__container_left {
-        height: 19rem;
+        min-height: 19rem;
     }
     .prices__list__container {
         width: 14rem;
-        height: 14.625rem;
+        min-height: 14.625rem;
+        margin-top: 2.5rem;
     }
     .prices__list {
-        height: 11rem;
+        min-height: 11rem;
     }
     .prices__item {
         width: 11.25rem;
-        height: 3.125rem;
+        min-height: 3.125rem;
     }
     .prices__item__summary {
         font-size: 0.9375rem;
+    }
+    .prices__item__spoiler {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .prices__container_rigth {
         height: 7.875rem;
